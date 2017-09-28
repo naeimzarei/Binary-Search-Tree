@@ -7,7 +7,6 @@ public class NodeTest {
 		
 		// Insert into BST
 		tree.addNode(44);
-		tree.printBST(tree.getRoot());
 		tree.addNode(45);
 		tree.addNode(30);
 		tree.addNode(46);
@@ -16,5 +15,10 @@ public class NodeTest {
 		System.out.println(tree.getRoot().getLeft().getValue());
 		System.out.println(tree.getRoot().getRight().getValue());
 		System.out.println(tree.getRoot().getRight().getRight().getValue());
+		
+		System.out.println();
+		
+		// Print BST
+		tree.printBST(tree.getRoot());
 	}
 }

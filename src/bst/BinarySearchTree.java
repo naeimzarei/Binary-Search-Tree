@@ -126,4 +126,18 @@ public class BinarySearchTree {
 			System.out.print(" ");
 		}
 	}
+	
+	/**
+	 * Print the BST recursively 
+	 */
+	public void printBST(Node root) {
+		if (root.getLeft() != null) {
+			System.out.println(root.getLeft().getValue() + " ");
+			printBST(root.getLeft());
+		}
+		if (root.getRight() != null) {
+			System.out.println(root.getRight().getValue() + " ");
+			printBST(root.getRight());
+		}
+	}
 }
